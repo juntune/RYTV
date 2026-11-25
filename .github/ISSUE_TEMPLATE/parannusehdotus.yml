@@ -2,7 +2,7 @@ name: "Parannusehdotus"
 description: "Ehdota parannusta olemassa olevaan RYTV-sisältöön."
 title: "[Parannusehdotus]: "
 labels:
-  - "parannusehdotus"
+  - "parannus"
 body:
   - type: markdown
     attributes:
