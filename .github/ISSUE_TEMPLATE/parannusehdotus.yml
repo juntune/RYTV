@@ -1,0 +1,44 @@
+name: "Parannusehdotus"
+description: "Ehdota parannusta olemassa olevaan RYTV-sisältöön."
+title: "[Parannusehdotus]: "
+labels:
+  - "parannusehdotus"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Käytä tätä lomaketta, kun ehdotat olemassa olevan RYTV-sisällön parantamista, tarkentamista tai täydentämistä.
+  - type: input
+    id: content
+    attributes:
+      label: "Mitä sisältöä ehdotus koskee?"
+      description: "Anna julkaisun, luvun, vaatimuksen tai muun sisällön nimi."
+      placeholder: "Esim. Yleiset tietomallivaatimukset / luku 4"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: "Linkki sisältöön"
+      description: "Lisää linkki kehitettävään sisältöön, jos mahdollista."
+      placeholder: "https://..."
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Mitä pitäisi parantaa?"
+      description: "Kuvaa, mitä nykyisessä sisällössä pitäisi muuttaa, täydentää tai selventää."
+      placeholder: "Kuvaa parannusehdotus."
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: "Miksi muutos olisi tarpeellinen?"
+      description: "Kerro, mitä ongelmaa muutos ratkaisisi tai miten se parantaisi RYTV-sisältöä."
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-content
+    attributes:
+      label: "Ehdotus uudeksi sisällöksi"
+      description: "Voit halutessasi ehdottaa valmista tekstiä tai muuta ratkaisua."

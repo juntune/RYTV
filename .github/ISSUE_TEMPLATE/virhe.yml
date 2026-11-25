@@ -1,0 +1,44 @@
+name: "Virheilmoitus"
+description: "Ilmoita RYTV-julkaisussa havaitsemastasi virheestä."
+title: "[Virhe]: "
+labels:
+  - "virhe"
+type: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ilmoita tällä lomakkeella RYTV-sisällössä havaitsemastasi virheestä.
+  - type: input
+    id: content
+    attributes:
+      label: "Missä virhe on?"
+      description: "Anna julkaisun, luvun, vaatimuksen tai muun sisällön nimi."
+      placeholder: "Esim. Yleiset tietomallivaatimukset / luku 4"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: "Linkki virheelliseen sisältöön"
+      description: "Lisää suora linkki kyseiseen kohtaan, jos mahdollista."
+      placeholder: "https://..."
+  - type: textarea
+    id: error
+    attributes:
+      label: "Virheen kuvaus"
+      description: "Kerro, mikä sisällössä on mielestäsi virheellistä."
+      placeholder: "Kuvaa havaittu virhe mahdollisimman tarkasti."
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: "Ehdotettu korjaus"
+      description: "Kerro oikea sisältö tai korjaustapa, jos se on tiedossasi."
+      placeholder: "Miten sisältö pitäisi mielestäsi korjata?"
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Lisätiedot"
+      description: "Voit lisätä esimerkiksi kuvakaappauksen, lähteen tai muuta virheen käsittelyä helpottavaa tietoa. Kuvat ja muut tiedostot voi liittää vetämällä ne kenttään tai liittämällä ne leikepöydältä."

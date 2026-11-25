@@ -1,0 +1,44 @@
+name: "Uusi idea"
+description: "Ehdota RYTV:hen uutta sisältöä, ominaisuutta tai kokonaisuutta."
+title: "[Idea]: "
+labels:
+  - "idea"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Käytä tätä lomaketta uuden RYTV-sisällön, toiminnallisuuden tai laajemman kehitysajatuksen ehdottamiseen.
+
+        Jos ehdotuksesi koskee olemassa olevan sisällön parantamista, käytä Kehitysehdotus-lomaketta.
+  - type: input
+    id: idea
+    attributes:
+      label: "Idea lyhyesti"
+      description: "Tiivistä idea yhteen lauseeseen."
+      placeholder: "Esim. RYTV:hen tulisi lisätä..."
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: "Mihin tarpeeseen idea vastaa?"
+      description: "Kuvaa ongelma tai tarve, jota idealla ratkaistaisiin."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Idean kuvaus"
+      description: "Kuvaa tarkemmin, mitä ehdotat."
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: "Kenelle tästä olisi hyötyä?"
+      description: "Kuvaa halutessasi keskeiset käyttäjät tai käyttötapaukset."
+  - type: textarea
+    id: references
+    attributes:
+      label: "Esimerkit ja lähteet"
+      description: "Voit lisätä vastaavia ratkaisuja, standardeja, julkaisuja, linkkejä tai muita taustatietoja."
